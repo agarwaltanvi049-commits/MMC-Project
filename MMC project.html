@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Cultures, One Rhythm | School Project</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-color: #FDFCF0;
+            --text-color: #4a4a4a;
+            --accent-pink: #FFB7B2;
+            --accent-blue: #AEC6CF;
+            --accent-green: #B4F8C8;
+            --accent-lavender: #DAD0FF;
+            --accent-peach: #FFDAC1;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.8;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            background: white;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            z-index: 1000;
+            border-bottom: 3px solid var(--accent-lavender);
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--text-color);
+            margin: 0 15px;
+            font-weight: 600;
+            padding: 8px 15px;
+            border-radius: 20px;
+        }
+
+        nav a:hover {
+            background-color: var(--accent-lavender);
+            color: white;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        section {
+            padding: 50px 0;
+            border-bottom: 2px dashed var(--accent-blue);
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            text-align: center;
+            color: var(--accent-pink);
+            margin-bottom: 15px;
+        }
+
+        h2 {
+            background: var(--accent-peach);
+            display: inline-block;
+            padding: 10px 25px;
+            border-radius: 15px;
+            margin: 30px 0 20px 0;
+            color: #555;
+        }
+
+        h3 {
+            color: #666;
+            margin: 25px 0 15px 0;
+            font-size: 1.3rem;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .box {
+            background: white;
+            border: 2px solid var(--accent-pink);
+            padding: 20px;
+            border-radius: 15px;
+            margin: 20px 0;
+        }
+
+        .profile-card {
+            background: white;
+            border: 3px solid var(--accent-peach);
+            padding: 30px;
+            border-radius: 25px;
+            text-align: center;
+        }
+
+        .btn {
+            background: var(--accent-pink);
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .gallery-item {
+            height: 160px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .gallery-item span {
+            background: rgba(0,0,0,0.6);
+            padding: 8px 12px;
+            border-radius: 8px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: var(--accent-lavender);
+            color: white;
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 2rem; }
+            nav a { display: block; margin: 5px 0; }
+            .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#blog">Blog</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#about">About Me</a>
+    </nav>
+
+    <!-- HOME PAGE -->
+    <div id="home" class="container">
+        <section style="text-align: center; padding: 80px 20px;">
+            <h1>Two Cultures,<br>One Rhythm</h1>
+            <h3 style="color: var(--accent-blue); border: none;">The Fusion of Western Pop & Indian Classical Music</h3>
+            <p style="margin-top: 25px;">
+                Hi everyone! Welcome to my school project. Music has always been my passion, and today I'm going to share something really close to my heart - how Western Pop and Indian Classical Music come together to create something truly magical.
+            </p>
+            <br>
+            <a href="#blog" class="btn">Let's Start</a>
+        </section>
+    </div>
+
+    <!-- BLOG PAGE -->
+    <div id="blog" class="container">
+        <section>
+            <h2>Introduction</h2>
+            <p>
+                Music has been my passion for as long as I can remember. I'm an aspiring musician and singer, and I truly believe that music is the most powerful language in the world. When I was thinking about what topic to choose for my school project, music just made the most sense. Almost everyone in my class listens to music - whether it's on the way to school or while studying, music is always there with us.
+            </p>
+            <p>
+                But then I started wondering - what happens when two totally different types of music come together? Like, what happens when Western Pop meets Indian Classical Music? That's exactly what I wanted to explore for my project!
+            </p>
+
+            <div class="box">
+                <strong>My Question:</strong> Can two very different types of music actually sound good together? Let me tell you what I found through my journey as a musician!
+            </div>
+
+            <h2>Western Pop Music</h2>
+            <p>
+                Western Pop is the music you hear everywhere - on the radio, on Instagram Reels, on TikTok. Artists like Taylor Swift, Ed Sheeran, and Dua Lipa make songs that are super easy to sing along to. The beats are catchy and the songs are about stuff we all understand - like crushes, friendships, and just having fun.
+            </p>
+            <p>
+                Pop music changes with the times too. Now with social media, songs can go viral in just a few hours. Everyone knows those songs that get stuck in your head - that's pop music! What I love about it is that it connects with people from all over the world, no matter what language they speak.
+            </p>
+
+            <h2>Indian Classical Music</h2>
+            <p>
+                Now this is something really close to my heart as a singer. Indian Classical Music has been around for thousands of years. It's not just about singing or playing an instrument - it takes so much practice and discipline. When I listen to classical music, I feel like I'm connecting to something ancient and beautiful.
+            </p>
+            <p>
+                There are these things called Ragas, which are like musical patterns that create different emotions and moods. And there are Talas, which are rhythmic cycles that give the music its structure. The instruments are so beautiful - like the sitar, the tabla, and the bansuri (which is the bamboo flute). When you hear a really good classical performance, it just touches your soul.
+            </p>
+            <p>
+                Some famous artists who mix classical music with modern sounds are A.R. Rahman and Anoushka Shankar. I find them so inspiring because they show us how to honor our roots while being creative!
+            </p>
+
+            <h2>Coke Studio</h2>
+            <p>
+                Okay, so I have to talk about Coke Studio because it's literally one of the best examples of music fusion ever! Coke Studio started in Pakistan in 2008, and now it's famous all over the world. The concept is so cool - they bring together traditional singers with pop and rock artists, and they create songs that are just incredible.
+            </p>
+            <p>
+                What makes Coke Studio special is that they mix things like Qawwali (which is spiritual Sufi music) with modern pop. And somehow it just works perfectly! Every season has some song that becomes a massive hit.
+            </p>
+
+            <h2>Rishab Rikhiram Sharma</h2>
+            <p>
+                I also want to talk about Rishab Rikhiram Sharma because he's really amazing and inspiring for someone like me who's learning music. He's a famous Indian classical musician who plays the bansuri, which is the Indian bamboo flute. What's cool is that he doesn't just play classical music - he mixes it with jazz, rock, and even electronic music!
+            </p>
+            <p>
+                Rishab started learning flute when he was just 12 years old - that's around our age! He was also part of a show called "The Dewarists" on MTV, where artists mix Indian classical music with modern genres. What I love about him is that he's making classical music cool for young people like us. As an aspiring musician, I find him so inspiring!
+            </p>
+
+            <h2>Why This Matters to Me</h2>
+            <p>
+                As someone who wants to become a professional musician and singer, this topic is really important to me. I believe that the best music comes from mixing different traditions. When you blend pop's catchiness with classical's soulfulness, you get something that feels new but also meaningful.
+            </p>
+            <p>
+                What excites me most is that this fusion helps keep traditional music alive. Young people like us can enjoy modern beats while still connecting to our roots. It's like having the best of both worlds! I hope that one day I can create music that brings people together just like these fusion artists do.
+            </p>
+
+            <h2>Conclusion</h2>
+            <p>
+                So that's my project! I really enjoyed making it because music is not just a subject for me - it's my passion and dream. I truly believe that music has the power to bring people together, no matter where they come from. Whether it's pop or classical, at the end of the day, it's all about expressing feelings and connecting with others. Thanks for listening to my project!
+            </p>
+
+            <p style="text-align: center; margin-top: 30px;">
+                <strong>Thank You!</strong> 🎵
+            </p>
+        </section>
+    </div>
+
+    <!-- GALLERY PAGE -->
+    <div id="gallery" class="container">
+        <section>
+            <h2 style="display: block; text-align: center; background: var(--accent-green);">Image Gallery</h2>
+            <p style="text-align: center;">Some pictures representing the music I'm talking about</p>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1543051932-6ef9fecfbc80?w=400');">
+                    <span>Sitar</span>
+                </div>
+                <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1598488035139-bdbb60106dc1?w=400');">
+                    <span>Guitar</span>
+                </div>
+                <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?w=400');">
+                    <span>Piano</span>
+                </div>
+                <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1507838153414-b4b713384ebd?w=400');">
+                    <span>Music Notes</span>
+                </div>
+                <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400');">
+                    <span>Headphones</span>
+                </div>
+                <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1493225457124-a3eb161ffc5a?w=400');">
+                    <span>Concert</span>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- ABOUT ME PAGE -->
+    <div id="about" class="container">
+        <section>
+            <h2 style="display: block; text-align: center; background: var(--accent-pink); color: white;">About Me</h2>
+            
+            <div class="profile-card">
+                <h3>Hi, I'm Tanvi Agarwal!</h3>
+                <p>
+                    I'm a student and <strong>aspiring musician and singer</strong>. Music is not just my hobby - it's my passion and something I dream to pursue professionally. I created this website for my school project because I wanted to share my love for music with everyone.
+                </p>
+                
+                <h3>My Musical Journey</h3>
+                <p>
+                    I've always been passionate about music since I was little. I love singing and hope to become a professional musician one day. I also love listening to different types of music - from pop hits to classical melodies. My dream is to create music that touches people's hearts, just like my favorite artists do.
+                </p>
+                
+                <h3>Why I Chose This Topic</h3>
+                <p>
+                    I grew up listening to both English pop songs and Indian classical music at home. My parents exposed me to both worlds, and I fell in love with both. I started thinking - what if we combine both? That's how I got this idea for my project! I believe that as a future musician, I should understand different types of music and how they can blend together beautifully.
+                </p>
+                
+                <h3>My Dreams</h3>
+                <p>
+                    I want to become a singer and musician who brings people together through music. I want to create songs that mix different traditions and touch people's hearts. This project has inspired me even more to follow my dreams!
+                </p>
+                
+                <h3>Some Stuff I Like</h3>
+                <p>
+                    Singing and making music, listening to all kinds of music, spending time with friends, and learning about different cultures through music.
+                </p>
+            </div>
+            
+            <div style="text-align: center; margin-top: 30px;">
+                <p>Thanks for checking out my project!</p>
+                <a href="#home" class="btn">Back to Home</a>
+            </div>
+        </section>
+    </div>
+
+    
+</body>
+</html>
+         
